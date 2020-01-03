@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
+    "leaflet": "^1.6.0",
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-leaflet": "^2.6.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
