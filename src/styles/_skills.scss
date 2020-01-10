@@ -1,0 +1,46 @@
+@import "color";
+
+/* ====== SKILLS SHORTCODE STYLES  ====== */
+
+.niko-sc{
+  &__skills-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__skills-name{
+    font-weight: 900;
+    line-height: normal;
+    color: $white;
+  }
+
+  &__skills-value{
+    font-weight: 900;
+    line-height: normal;
+    color: $primary;
+    display: inline-block;
+  }
+
+  &__skills-line{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: $semi-dark;
+    margin-top: 5px;
+  }
+
+  .active-line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: $primary;
+    transition: width 1.5s ease, opacity 1.5s ease;
+  }
+}

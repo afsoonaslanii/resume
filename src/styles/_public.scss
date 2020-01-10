@@ -1,0 +1,35 @@
+@import "color";
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .site-content__inner {
+    height: 94%;
+    padding-top: 3%;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 992px){
+  .site-content__inner-left {
+    max-width: calc(50% - 150px);
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+
+.height-100 {
+  height: 100%;
+}
+
+.primary-color{
+  color: $primary;
+}
