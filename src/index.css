@@ -1,0 +1,9 @@
+* {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  background-color: #0a0000;
+  color:  #bfbfbf;
+}
