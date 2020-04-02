@@ -1,4 +1,4 @@
-@import "color";
+@import "variables";
 
 /* ====== PAGE TEMPLATE STYLES  ====== */
 
@@ -115,36 +115,36 @@
     margin: 40px 0;
     padding: 0 5px 0 35px;
     overflow-x: hidden;
-
-    overflow-y: scroll;
+    // we used another library for custum scroll
+    //overflow-y: scroll;
     position: relative;
 
-    //&::before,
-    //&::after {
-    //  content: '';
-    //  left: 0;
-    //  right: 0;
-    //  height: 50px;
-    //  position: absolute;
-    //  display: block;
-    //  z-index: 3;
-    //}
-    //
-    //&::before {
-    //  top: 0;
-    //  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, $dark), color-stop(23%, $dark), to(rgba(0, 0, 0, 0)));
-    //  background-image: -webkit-linear-gradient(top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //  background-image: -o-linear-gradient(top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //  background-image: linear-gradient(to bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //}
-    //
-    //&::after {
-    //  bottom: 0;
-    //  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, $dark), color-stop(23%, $dark), to(rgba(0, 0, 0, 0)));
-    //  background-image: -webkit-linear-gradient(bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //  background-image: -o-linear-gradient(bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //  background-image: linear-gradient(to top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
-    //}
+    &::before,
+    &::after {
+      content: '';
+      left: 0;
+      right: 0;
+      height: 50px;
+      position: absolute;
+      display: block;
+      z-index: 3;
+    }
+
+    &::before {
+      top: 0;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, $dark), color-stop(23%, $dark), to(rgba(0, 0, 0, 0)));
+      background-image: -webkit-linear-gradient(top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+      background-image: -o-linear-gradient(top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(to bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &::after {
+      bottom: 0;
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, $dark), color-stop(23%, $dark), to(rgba(0, 0, 0, 0)));
+      background-image: -webkit-linear-gradient(bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+      background-image: -o-linear-gradient(bottom, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(to top, $dark 45%, $dark 23%, rgba(0, 0, 0, 0) 100%);
+    }
 
     .entry-header {
       margin-top: 40px;

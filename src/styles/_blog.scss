@@ -1,4 +1,4 @@
-@import "color";
+@import "variables";
 
 /* ====== BLOG STYLES ====== */
 
@@ -13,7 +13,8 @@
     .page-numbers{
       margin: 12px 15px 0;
       padding: 7px 14px;
-      border: 1px solid inherit;
+      border: 1px solid;
+      border-color: inherit;
       border-radius: 50%;
 
       &:not(.current){
@@ -49,10 +50,11 @@
   }
 
   &__item{
-    width: 50%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 50px;
+
 
     .sticky_icon{
       position: absolute;
@@ -94,7 +96,7 @@
 
   &__item-date-top,
   &__item-date-bottom{
-    color: $dark;
+    color: $white;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.2px;
@@ -128,7 +130,7 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 1.39;
-    color: $white;
+    color: $light-grey;
     text-transform: capitalize;
     display: block;
     -ms-word-wrap: break-word;

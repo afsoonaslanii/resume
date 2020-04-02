@@ -11,7 +11,7 @@ function Menu() {
         <MenuList/>
       </div>
       <div className="left-menu__download">
-        <a className='left-menu__download-btn' href="">
+        <a download className='left-menu__download-btn' href="../../../static/files/afsoon-aslani-98.pdf">
           <i className="fas fa-cloud-download-alt"/>
         </a>
       </div>

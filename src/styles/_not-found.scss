@@ -1,0 +1,52 @@
+@import "variables";
+
+/* ====== 404 PAGE STYLES  ====== */
+
+.error-404{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+
+  &__title{
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: $primary;
+  }
+
+  &__content{
+    margin-bottom: 20px;
+  }
+
+  &__btn{
+    font-size: 15px;
+    line-height: normal;
+    color: $white;
+    text-transform: capitalize;
+    border: 2px solid $primary;
+    background-color: $primary;
+    padding: 13px 28px;
+    -webkit-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all;
+
+    &:hover{
+      background-color: transparent;
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+}
+
+.error404{
+  .entry-header{
+    display: none;
+  }
+
+  .mCustomScrollBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

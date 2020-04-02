@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
+import { Scrollbars } from 'react-custom-scrollbars';
 import Menu from './menu';
 import Person from './person';
 import '../../styles/global.scss';
@@ -20,40 +21,23 @@ function DefaultLayout({component: Component, hasTab, hasSelector, fetchOffices,
 
               <div className='col-lg-6 p-0 site-content__inner-right'>
                 <div className='site-content__page'>
-                  <div className='site-content__page-wrap mCustomScrollbar _mCS_3'>
-                    <div id='mCSB_3' className='mCustomScrollBox mCS-light mCSB_vertical mCSB_inside' tabIndex='0'
-                         style={{maxHeight: 'none',}}>
-                      <div id='mCSB_3_container' className='mCSB_container'
-                           style={{position: 'relative', top: 0, left: 0,}} dir='ltr'>
 
-                        <Component {...matchProps}/>
+                  <div className='site-content__page-wrap mCustomScrollbar'>
 
-                        {/*<div*/}
-                          {/*id='mCSB_3_scrollbar_vertical'*/}
-                          {/*className='mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical'*/}
-                          {/*style={{display: 'block'}}*/}
-                        {/*>*/}
-                          {/*<div className='mCSB_draggerContainer'>*/}
-                            {/*<div*/}
-                              {/*id='mCSB_3_dragger_vertical'*/}
-                              {/*className='mCSB_dragger'*/}
-                              {/*style={{*/}
-                                {/*position: 'absolute',*/}
-                                {/*minHeight: '30px',*/}
-                                {/*display: 'block',*/}
-                                {/*height: '92px',*/}
-                                {/*maxHeight: '404px',*/}
-                                {/*top: '82px',*/}
-                              {/*}}*/}
-                            {/*>*/}
-                              {/*<div className='mCSB_dragger_bar' style={{lineHeight: '30px'}}/>*/}
-                            {/*</div>*/}
-                            {/*<div className='mCSB_draggerRail'/>*/}
-                          {/*</div>*/}
-                        {/*</div>*/}
+                    <Scrollbars autoHide>
+
+                    <div className='mCustomScrollBox' tabIndex='0' style={{maxHeight: 'none'}}>
+                      <div className='mCSB_container' style={{position: 'relative', top: 0, left: 0,}} dir='ltr'>
+
+                        <div className='niko-sc'>
+                          <Component {...matchProps}/>
+                        </div>
+
                       </div>
                     </div>
+                    </Scrollbars>
                   </div>
+
                 </div>
               </div>
             </div>

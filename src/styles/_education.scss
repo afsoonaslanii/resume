@@ -1,4 +1,4 @@
-@import "color";
+@import "variables";
 
 /* ====== EXPERIENCE SHORTCODE STYLES  ====== */
 
@@ -64,6 +64,6 @@
   &__educ{
     padding-left: 30px;
     padding-right: 30px;
-    width: 50%;
+    width: 100%;
   }
 }
