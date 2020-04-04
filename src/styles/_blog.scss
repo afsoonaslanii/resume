@@ -1,0 +1,150 @@
+@import "variables";
+
+/* ====== BLOG STYLES ====== */
+
+.niko-blog{
+  $p: &;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  &__pagination{
+    margin-top: 25px;
+
+    .page-numbers{
+      margin: 12px 15px 0;
+      padding: 7px 14px;
+      border: 1px solid;
+      border-color: inherit;
+      border-radius: 50%;
+
+      &:not(.current){
+        border-color: $light-grey;
+
+        &:hover{
+          border-color: inherit;
+        }
+      }
+
+      &.next,
+      &.prev,
+      &.dots{
+        border: none;
+      }
+    }
+
+    span{
+      color: $primary;
+      font-weight: 500;
+    }
+  }
+
+  &__list{
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+
+
+    .sticky_icon{
+      position: absolute;
+      top: -3px;
+      left: 40px;
+      transform: rotate(-45deg);
+      stroke: $primary;
+      display: none;
+
+      polygon{
+        fill: $primary;
+      }
+    }
+
+    &.sticky{
+      #{$p}__item-title{
+        padding-left: 25px;
+      }
+
+      .sticky_icon{
+        display: inline-block;
+      }
+    }
+  }
+
+  &__item-top{
+    position: relative;
+  }
+
+  &__item-img{
+    height: auto;
+    width: 100%;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item-date-top,
+  &__item-date-bottom{
+    color: $white;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    background-color: $primary;
+    padding: 5px 7px;
+    line-height: 1;
+    display: inline-block;
+
+    a{
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+
+  &__item-date-top{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__item-date-bottom{
+    margin-top: 5px;
+  }
+
+  &__item-bottom{
+    margin-top: 20px;
+    position: relative;
+  }
+
+  &__item-title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.39;
+    color: $light-grey;
+    text-transform: capitalize;
+    display: block;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  &__item-excerpt{
+    font-size: 13px;
+    line-height: 1.85;
+    color: $grey;
+    margin-top: 5px;
+
+    p{
+      margin-bottom: 0;
+    }
+  }
+}

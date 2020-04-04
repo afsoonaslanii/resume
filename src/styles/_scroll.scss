@@ -1,0 +1,27 @@
+@import "variables";
+
+/* ====== SCROLLBAR STYLES ====== */
+
+.mCSB_scrollTools {
+  width: 8px;
+
+  .mCSB_draggerRail {
+    background-color: transparent;
+  }
+
+  .mCSB_dragger.mCSB_dragger_onDrag {
+    .mCSB_dragger_bar {
+      background-color: $soft-grey;
+    }
+  }
+
+  .mCSB_dragger {
+    .mCSB_dragger_bar {
+      background-color: $soft-grey;
+    }
+  }
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}

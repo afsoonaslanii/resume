@@ -1,0 +1,133 @@
+@import "variables";
+
+/* ====== GLOBAL STYLES  ====== */
+
+body {
+  font-family: $first-font;
+  color: $grey;
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+* {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+i {
+  font-size: inherit;
+}
+
+span,
+p,
+em {
+  font-size: inherit;
+  line-height: inherit;
+  position: relative;
+}
+
+figcaption {
+  margin-top: 1em;
+  font-size: 13px;
+  text-align: center;
+  color: $grey;
+  *{
+    font-size: inherit!important;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+em {
+  color: $dark;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: #fff;
+}
+
+::selection {
+  background: $primary;
+  color: #fff;
+}
+
+a {
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+  text-decoration: none;
+  color: $light-grey;
+  font-weight: 500;
+  font-size: 15px;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 70px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+ul, ol {
+  padding-left: 20px;
+  ul {
+    list-style-type: initial;
+  }
+}
+
+td, tr, th {
+  padding: 5px 10px;
+}
+
+th, td, tr,
+table {
+  border: 1px solid $light-grey;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 15px;
+  &.is-style-stripes {
+    border: none;
+  }
+}
+
+pre{
+  background-color: #fbfbfb;
+  padding: 20px 15px;
+}
+
+
+b, strong{
+  -webkit-font-smoothing: auto;
+}

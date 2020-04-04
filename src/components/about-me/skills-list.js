@@ -1,0 +1,16 @@
+export const skillsList = [
+  {id: 1, title: 'HTML5', value: '90'},
+  {id: 2, title: 'CSS3', value: '90'},
+  {id: 3, title: 'SASS', value: '50'},
+  {id: 4, title: 'Bootstrap', value: '70'},
+  {id: 5, title: 'semantic-ui', value: '60'},
+  {id: 5, title: 'tail wind css', value: '80'},
+  {id: 6, title: 'javascript', value: '50'},
+  {id: 7, title: 'React.js', value: '60'},
+  {id: 8, title: 'Redux', value: '60'},
+  {id: 9, title: 'Next.js', value: '60'},
+  {id: 10, title: 'jQuery', value: '50'},
+  {id: 11, title: 'PHP', value: '50'},
+  {id: 12, title: 'codeigniter', value: '40'},
+  {id: 13, title: 'ionic', value: '40'},
+];

@@ -1,0 +1,81 @@
+@import "variables";
+
+/* ====== STYLES FOR PERSON ====== */
+
+.person{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+
+  &__avatar{
+    height: 100%;
+    background: url("../static/images/Afsoon-Aslani.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__name{
+    font-weight: 900;
+    line-height: 1.17;
+    color: $white;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  &__position{
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary;
+    text-align: center;
+    margin-top: 10px;
+    line-height: normal;
+  }
+  &__socials-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 15px 0 70px;
+
+    li{
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li:not(:last-child){
+      margin-right: 10px;
+    }
+
+    a{
+      font-size: 18px;
+      color: $white;
+
+      i{
+        font-family: 'FontAwesome';
+        font-style: normal;
+      }
+
+      &:hover{
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
